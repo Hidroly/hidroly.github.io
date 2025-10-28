@@ -1,5 +1,22 @@
 @import url(https://fonts.bunny.net/css?family=poppins:300,600,800);
 
+:root {
+    --bg-color: #242530;
+}
+
 * {
     font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    min-height: 100vh;
+    min-width: 100vw;
+
+    background-color: var(--bg-color);
 }
