@@ -1,7 +1,10 @@
-@import url(https://fonts.bunny.net/css?family=poppins:300,600,800);
+@import url(https://fonts.bunny.net/css?family=poppins:300,500,600,800);
 
 :root {
     --bg-color: #242530;
+    --color-text-primary: #F9F9F9;
+    --color-accent: #8097D3;
+    --color-text-secondary: #BEC0C5;
 }
 
 * {
@@ -14,9 +17,95 @@
 body {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 
     min-height: 100vh;
     min-width: 100vw;
 
+    color: var(--color-text-primary);
     background-color: var(--bg-color);
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    flex: 1;
+    gap: 16px;
+
+    padding: 16px;
+    animation: fadeIn 0.6s ease-out forwards;
+}
+
+.hero-text-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1em;
+    width: 24em;
+}
+
+.hero-image-container-phone-mockup {
+    border-radius: 32px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.hero-download-btn {
+    padding: 8px 24px;
+    background-color: var(--color-accent);
+
+    color: var(--color-text-primary);
+    font-weight: 500;
+
+    border-radius: 12px;
+    -webkit-box-shadow:0px 0px 105px 20px rgba(128,152,211,0.5);
+    -moz-box-shadow: 0px 0px 105px 20px rgba(128,152,211,0.5);
+    box-shadow: 0px 0px 105px 20px rgba(128,152,211,0.5);
+}
+
+.hero-download-btn:hover {
+    cursor: pointer;
+    background-color: #91abec;
+    transition: 0.5s;
+}
+
+.hero-text-container-interactables {
+    display: flex;
+    align-items: center;
+
+    gap: 1em;
+}
+
+.github-interactable img {
+    display: block;
+}
+
+.github-interactable img:hover {
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        justify-content: center;
+        align-items: center;
+        padding: 18px;
+
+        text-align: center;
+    }
+
+    .hero-text-container-interactables {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-image-container-phone-mockup {
+        display: none;
+    }
 }
