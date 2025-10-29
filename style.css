@@ -154,7 +154,6 @@ main {
     display: flex;
     flex-direction: column;
 
-    padding: 0 8rem;
     margin-top: 2rem;
 }
 
@@ -163,7 +162,7 @@ main {
     flex-direction: column;
     gap: 1rem;
 
-    padding-bottom: 2rem;
+    padding: 2rem 8rem 4rem 8rem;
 }
 
 .features-cards-container {
@@ -187,6 +186,29 @@ main {
 .feature-card:hover {
     transform: translateY(-10px);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.download-section {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #1c1d2b;
+
+    padding: 4rem 8rem;
+    text-align: center;
+    gap: 2rem;
+}
+
+.download-section-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-store-options {
+    display: flex;
+    align-items: center;
 }
 
 @keyframes fadeIn {
