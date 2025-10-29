@@ -248,3 +248,34 @@ footer a {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+@media screen and (max-width: 700px) {
+    header {
+        padding: 1rem 2rem 4rem 2rem;
+    }
+
+    .features-section {
+        padding: 2rem;
+    }
+    
+    .download-section {
+        padding: 1.5rem;
+    }
+
+    footer {
+        text-align: center;
+        gap: .5rem;
+    }
+
+    .footer-interactables a {
+        font-size: .6em;
+    }
+
+    footer p {
+        font-size: .8em;
+    }
+
+    .hero-image-container-phone-mockup {
+        display: none;
+    }
+}
